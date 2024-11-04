@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Ismétlés</title>
+        <meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css">
+		
+		<style>
+			
+			h1{
+				color:blue;
+			}
+		</style>
+    </head>
+    <!-- <body style="tulajdonság : értéke; tul2;érték2"> -->
+    <body style="background-color:lightblue; color:red">
+        <h1>Év eleji ismétlés</h1>
+        
+        <h2>tartalomjegyzék</h2>
+        <ul>
+            <li><a href="#hivatkozas">hiperhivatkozás</a></li>
+            <li><a href="#kepek">képek</a></li>
+            <li><a href="#felsorolas">Felsorolás</a></li>
+            <li><a href="#bekezdes">Bekezdés</a></li>
+            <li><a href="#cimsorok">címsorok</a></li>
+        </ul>
+        
+        <h2 id="cimsorok">címsorok használata</h2>
+        
+        <h1>Címsor1</h1>
+        <h2>Címsor2</h2>
+        <h3>Címsor3</h3>
+        <h4>Címsor4</h4>
+        <h5>Címsor5</h5>
+        <h6>Címsor6</h6>
+        
+        <h2>Bekezdés</h2>
+        
+        <p id="elsobekezdes">
+		Lorem ipsum dolor <b>sit</b> amet, <strong>consectetur</strong> adipiscing <i>elit</i>.
+		Donec volutpat sem vitae leo ultricies tempus. Cras ut tempus nisi.
+		Etiam sit amet dui <em>leo</em>. Duis et nulla justo.<br>Proin porttitor nec <u>augue</u> ut condimentum. 
+		Sed sed porta nulla.
+		<span>Suspendisse dictum,</span> orci et dignissim aliquam, quam purus cursus turpis, eu suscipit dolor ipsum nec orci.
+		Curabitur et erat arcu. Proin non tortor laoreet, scelerisque ligula ut, dapibus metus.
+		Aenean pharetra sem in est venenatis tincidunt.<br> Sed tincidunt ac ligula ut semper.
+		In non hendrerit nisl. Maecenas pharetra felis sit amet neque mollis, a facilisis mauris lobortis. 
+		Praesent in libero eget purus placerat efficitur.
+		</p>
+		
+        <p>In rhoncus cursus magna sit amet facilisis. Suspendisse congue a magna sed feugiat. 
+		Sed cursus leo augue, et vulputate felis hendrerit eget.<br> Curabitur eu magna hendrerit, pulvinar est vitae, pharetra est.
+		Suspendisse eget nulla ut elit tincidunt auctor. Vestibulum rhoncus enim risus, euismod suscipit nibh feugiat consequat. 
+		Proin ultrices leo lorem. Nam convallis, lacus a sollicitudin accumsan, justo risus dictum ligula, sed placerat dui erat sed lectus. 
+		Pellentesque ultricies dolor a arcu volutpat rhoncus. Aenean lorem lorem, scelerisque accumsan efficitur sed, ullamcorper quis orci.<br>
+		Nullam eu pharetra eros. Mauris sodales dui sem, id elementum diam volutpat vel.
+		Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+		</p>
+        
+        <h2 id="felsorolas">Felsorolás</h2>
+         
+        <ul type="square" class="felsorolas">
+            <li>szimbólumos lista1</li>
+            <li>szimbólumos lista2</li>
+            <li>szimbólumos lista3</li>
+            <li>szimbólumos lista4</li>
+        </ul>
+        <ol type="I">
+            <li>számozott lista1</li>
+            <li>számozott lista2</li>
+                <ol type="I">
+                    <li>szimbólumos lista1</li>
+                    <li>szimbólumos lista2</li>
+                    <li>szimbólumos lista3</li>
+                    <li>szimbólumos lista4</li>
+                </ol>
+            <li>számozott lista3</li>
+            <li>számozott lista4</li>
+        </ol>
+        <h2 id="kepek">képek</h2>
+		<a href="kepek/tajkep.jpg">
+		<figure>
+		<figcaptionajh></figcaption>
+        <img src="kepek/tajkep.jpg" alt="tajkep1" title="tájkép1" width="200">
+		</figure>
+		</a>
+        
+        <h2 id="hivatkozas">hiperhivatkozás</h2>
+        <p>szöveg
+			<a href="kepek/tajkep.jpg" target="_blank">Kattintson rám!</a>
+			<!-- Szöveg <a href="https://ideapod.com/how-to-become-a-sigma-male/">Kattintson rám!</a> -->
+		<p>
+
+			<h2>Táblázat</h2>
+
+			<table border="1">
+			<caption>Tábla neve</caption>
+				<tr>
+					<th>első oszlop</th>
+					<th>második oszlop</th>
+					<th>harmadik oszlop</th>
+					<th>negyedik oszlop</th>
+				</tr>
+				<tr>
+					<td colspan="3">
+						a
+
+						b
+
+						c
+					</td>
+					<td>
+						1
+					</td>
+				</tr>
+
+				<tr>
+					<td rowspan="2">
+						d g
+					</td>
+					<td>
+						e
+					</td>
+					<td colspan="3" rowspan="2">
+						f 2 i 3
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td>
+						h
+					</td>
+
+
+				</tr>
+
+
+
+
+			</table>
+
+			<h2> Házi feladat </h2>
+
+            <table border="1" >
+                <tr>
+                    <td>1</td>
+                    <td rowspan="3">2 6 11</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td rowspan="2">5 9</td>
+                </tr> 
+                <tr>
+                    <td>5</td>
+                    
+                    <td colspan="2" rowspan="2">7 8 12 13</td>
+                    
+                    
+                </tr> 
+                <tr>
+                    <td rowspan="3">10 15 20</td>
+                    
+                    
+                    <td>14</td>
+                </tr> 
+                <tr>
+                    
+                    <td>16</td>
+                    <td>17</td>
+                    <td colspan="2">18 19</td>
+                    
+                </tr> 
+                <tr>
+                    
+                    <td rowspan="2" colspan="3">21 22 23 26 27 28</td>
+                    
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    
+                    
+                    <td>29</td>
+                </tr>
+               
+            </table>
+
+
+</body>
+</html>
