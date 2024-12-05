@@ -5,12 +5,56 @@ p{
     font-size: 20px;
   }
 body{
-        background-image: url("kepek/1.jpg");
+        background-image: url("kepek/3.jpg");
         
     }
 h1{
     text-align: center;
     background-color: lightblue;
     color: white;
+    text-align: center;
   }
 
+
+form{
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+    background-color: rgba(112, 64, 189, 0.8);
+    /* border: 2px solid black; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+legend{
+    font-weight: bold;
+}
+
+fieldset{
+    border: 2px  solid rgb(9, 0, 128) ;
+    border-radius: 15px;
+}
+
+.textareaDiv{
+    width: 60%;
+    margin: auto;
+}
+
+textarea{
+    width: 100%;
+}
+
+#csuszka{
+    width: 100%;
+}
+
+
+#formstyle{
+  background-color: rgba(163, 134, 134, 0.8);
+}
+
+fieldset img{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+
+}
