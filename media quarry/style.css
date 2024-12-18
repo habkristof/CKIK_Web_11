@@ -1,0 +1,33 @@
+body{
+    background-color: red;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:auto auto;
+}
+.left{
+    background-color: rgba(59, 24, 156, 0.349);
+}
+.right{
+    background-color: rgba(48, 48, 121, 0.719);
+}
+.center{
+    border: 1px solid black;
+}
+
+/* Képernyő szélességére nézve*/
+@media(min-width:768px){
+    body{
+        background-color: green;
+    }
+    .container{
+        grid-template-columns: 50% 50%;
+    }    
+}
+
+@media (max-width:480px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
