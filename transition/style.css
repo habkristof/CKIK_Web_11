@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    padding: 10px 0px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 33%;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: aqua;
+    color: black;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 8px black;
+    position: relative;
+    text-decoration: underline;
+    transition: text-decoration 0.8s;
+       
+}
+

@@ -1,0 +1,72 @@
+div div{
+    width: 100px;
+    height: 50px;
+    background-color: aquamarine;
+
+}
+
+.megjelenes{
+    animation-name: lathatosag;
+    animation-duration: 5s;
+}
+
+@keyframes lathatosag{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.mozgatas{
+    animation-name: mozgatas;
+    animation-duration: 10s;
+    animation-iteration-count: 4;
+    animation-delay: 1s;
+}
+
+@keyframes mozgatas{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(500px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.forgatas{
+    height: 100px;
+    animation-name: forgatas;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes forgatas{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.forgatas2{
+    height: 100px;
+    animation-name: forgatas2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-color: beige
+}
+
+@keyframes forgatas2{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

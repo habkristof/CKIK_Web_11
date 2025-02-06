@@ -1,0 +1,164 @@
+/* Általános stílusok */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: 1px 1px 1px black;
+    transition: letter-spacing 0.5s;
+  }
+  
+  .menu a:hover {
+    letter-spacing: 2px;
+  }
+  
+  @keyframes menuAnim {
+    0% {
+      transform: scale(0);
+      filter: blur(10px);
+    }
+    80% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+      filter: blur(0);
+    }
+  }
+  
+  .menu a {
+    animation: menuAnim 1s ease;
+  }
+  
+  /* Értékelés szakasz */
+  #ertekeles {
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1em;
+  }
+  
+  .grid-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .gradient-box {
+    background: linear-gradient(to right, red, yellow, green);
+    position: relative;
+  }
+  
+  .cover {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    animation: toltes 3s forwards;
+  }
+  
+  @keyframes toltes {
+    0% {
+      width: 100%;
+      border-radius: 20px;
+    }
+    25% {
+      border-radius: 20px 20px 0 0;
+    }
+    100% {
+      width: 10%;
+      border-radius: 20px 0 0 20px;
+    }
+  }
+  
+  /* Kategóriák szakasz */
+  #kategoriak {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5em 1em;
+  }
+  
+  .kartya {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    height: 280px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.25s;
+  }
+  
+  .kartya:hover {
+    border-radius: 50%;
+    border-style: solid;
+  }
+  
+  /* Űrlap szakasz */
+  #urlap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+  }
+  
+  .cell {
+    text-align: center;
+  }
+  
+  .szeles {
+    grid-column: span 2;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid gray;
+  }
+  
+  .radio-group input {
+    transform: scale(1.2);
+  }
+  
+  @keyframes nagyit {
+    0% {
+      transform: scale(1) rotateY(0deg);
+    }
+    50% {
+      transform: scale(2) rotateY(180deg);
+    }
+    100% {
+      transform: scale(1.25) rotateY(360deg);
+    }
+  }
+  
+  .radio-group input:checked {
+    animation: nagyit 1s;
+  }

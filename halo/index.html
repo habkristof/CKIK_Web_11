@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minta</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background-color: #3e8e41;
+        }
+
+        .category {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .category .card {
+            width: 150px;
+            height: 200px;
+        }
+    </style>
+</head <body>
+    <div class="container">
+        <div class="card">
+            <h1>Minta Kártya</h1>
+            <img src="image.jpg" alt="Minta Kép">
+            <div class="form">
+                <input type="text" placeholder="Név">
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Kor">
+                <div class="category">
+                    <div class="card">
+                        <h2>Kategória 1</h2>
+                    </div>
+                    <div class="card">
+                        <h2>Kategória 2</h2>
+                    </div>
+                </div>
+                <button type="submit">Küldés</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

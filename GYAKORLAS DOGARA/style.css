@@ -1,0 +1,62 @@
+body{
+    
+}
+
+header{
+    background-color: green;
+    color: white;
+    text-align:  center;
+    padding: 20px;
+
+}
+
+header img{
+    width: 80px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px white, -4px -4px 8px white;
+    animation-name: mozgas;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mozgas{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform:translate(500px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+
+}
+
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    animation-name: megjelenes;
+}
+
+
+
+
+footer{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes felkuszas{
+    0%{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100%{
+
+    }
+}
