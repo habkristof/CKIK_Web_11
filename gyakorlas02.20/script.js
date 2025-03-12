@@ -13,17 +13,35 @@ for(let i = 0; i < 10; i++)
 }
 console.log(tomb)
 
-let koratlag = [];
-for(let i =0; i < tomb.length; i++)
+let atlagok = [];
+for(let i =0; i<tomb.length; i++)
+{
+    let darab = tomb[i];
+    let osszeg = 0;
+    for(let j = i+1; j<i+darab; j++)
     {
-        szam =0;
-        while(i<tomb.length && tomb[i] < 10)
-            {
-                szam
-
-        }
-          
-
-
+        osszeg += tomb[j];
+    }
+    if(darab != 0)
+    {
+        atlagok.push(osszeg/darab);
+        i+= darab;
+    }
+    else
+    {
+        atlagok.push(0);
+    }
+   
 }
+console.log(atlagok);
 
+
+let maxi = 0;
+for(let i = 1; i<atlagok.length; i++)
+{
+    if(atlagok[maxi] <atlagok[i])
+    {
+        maxi = i;
+    }
+}
+console.log(maxi+1);
